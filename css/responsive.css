@@ -69,9 +69,14 @@
 	.ebs-notice-item .ebs-notice-icon{
 		left: -90px;
 	}
+	.icon-arrow-down{
+		top: 12px;
+	}
 
 }
 @media (max-width: 767px){
+	.ebs-portal-section .icon-arrow-down,
+	.site-header .head-right,
 	.home-slider{
 		display: none !important;
 	}
