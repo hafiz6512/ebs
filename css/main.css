@@ -668,10 +668,12 @@ section.home-slider{
 	border-color: #f36d2b;
 	padding-left: 30px;
 	padding-right: 30px;
+	border-width: 2px;
 }
 .site-header .head-right .btn-login:hover{
-	background-color: #2e3192;
-	border-color: #2e3192;
+	background-color: #ffffff;
+	border-color: #f36d2b;
+	color: #f36d2b;
 }
 .site-header .head-right .btn-login:focus,
 .site-header .head-right .btn-login:active{
@@ -680,16 +682,12 @@ section.home-slider{
 }
 
 .icon-arrow-down{
-	-webkit-transition: all 0s ease-in-out 0s;
-	-moz-transition: all 0s ease-in-out 0s;
-	-o-transition: all 0s ease-in-out 0s;
-	-ms-transition: all 0s ease-in-out 0s;
-	transition: all 0s ease-in-out 0s;
-	position: absolute;
-	right: 8%;
-	top: 40px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 9999;
 	border: 2px solid #f36d2b;
-	background-color: none;
+	background-color: rgba(255, 255, 255, 0.64);
 	color: #f36d2b;
 	display: flex;
 	height: 50px;
@@ -714,6 +712,10 @@ section.home-slider{
 .icon-arrow-down:focus{
 	outline: none !important;
 	box-shadow: none !important;
+}
+.icon-arrow-down.btnRemove{
+	opacity: 0;
+	visibility: none;
 }
 
 .icon-arrow-down .fa {

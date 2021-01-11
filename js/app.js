@@ -35,6 +35,21 @@
 })(jQuery);
 
 (function($) {
+	var arrowBottom = $(".icon-arrow-down");
+	var hieghtThreshold = $("#ebsNoticeSection").offset().top;
+	var hieghtThreshold_end  = $("#ebsNoticeSection").offset().top +$("#ebsNoticeSection").height() ;
+	$(window).scroll(function() {
+	    var scroll = $(window).scrollTop();
+
+	    if ( scroll >= hieghtThreshold - 200 ) {
+	        arrowBottom.addClass('btnRemove');
+	    } else {
+	        arrowBottom.removeClass('btnRemove');
+	    }
+	});
+})(jQuery);
+
+(function($) {
 	"use strict";
 
 	$('a[href*="#"].smoothScroll:not([href="#"])').click(function() {
